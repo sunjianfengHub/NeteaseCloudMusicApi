@@ -107,8 +107,8 @@ fs.readdirSync(path.join(__dirname, 'module'))
     })
   })
 
-const port = process.env.PORT || 3000
-const host = process.env.HOST || ''
+const port = process.env.PORT || 5001
+const host = process.env.HOST || '127.0.0.1'
 
 app.server = app.listen(port, host, () => {
   console.log(`server running @ http://${host ? host : 'localhost'}:${port}`)
